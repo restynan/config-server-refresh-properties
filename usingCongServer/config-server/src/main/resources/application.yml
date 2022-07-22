@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  Application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///Users/rnasimbw/downloads/usingCongServer/config
+          default-label: main
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+
+
